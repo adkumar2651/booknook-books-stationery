@@ -1618,6 +1618,19 @@ p {
   transform: rotate(90deg);
 }
 
+/* User Auth Modal (Login / Register) — content padding so headings/text
+   clear the absolutely-positioned close button and don't hug the edges */
+.auth-panel {
+  padding: 3.75rem 2.25rem 2.25rem;
+}
+
+.auth-title {
+  font-size: clamp(1.35rem, 4.5vw, 1.75rem);
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  overflow-wrap: break-word;
+}
+
 /* Product Detail Modal Content */
 .pdp-grid {
   display: grid;
