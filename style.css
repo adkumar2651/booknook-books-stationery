@@ -2738,6 +2738,70 @@ p {
 }
 
 @media (max-width: 480px) {
+  .editorial-spotlight {
+    padding: 2.25rem 1rem 1.5rem;
+    margin: 2.5rem 0;
+  }
+  .spotlight-grid {
+    gap: 1.5rem;
+  }
+  .spotlight-image-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+  .spotlight-image-wrap img {
+    max-width: min(220px, 72vw);
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+  }
+  .spotlight-content {
+    min-width: 0;
+    width: 100%;
+  }
+  .spotlight-content h4 {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+  .spotlight-content h2 {
+    font-size: clamp(2.1rem, 9vw, 3rem);
+    line-height: 1.05;
+    overflow-wrap: break-word;
+  }
+  .spotlight-author {
+    font-size: 1rem;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+  .spotlight-quote {
+    font-size: 1.05rem;
+    line-height: 1.45;
+    padding-left: 0.8rem;
+    overflow-wrap: break-word;
+  }
+  .spotlight-meta-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    width: 100%;
+  }
+  .spotlight-meta-list span {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+  .spotlight-content > div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .spotlight-content > div:last-of-type .btn {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+  }
   .trust-grid {
     grid-template-columns: 1fr;
   }
