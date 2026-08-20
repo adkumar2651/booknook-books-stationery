@@ -2750,7 +2750,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // 7. Mobile nav toggle — no inline handler on this button
   var mobileNavToggle = document.getElementById('mobile-nav-toggle');
   if (mobileNavToggle) {
-    mobileNavToggle.addEventListener('click', openMobileNav);
+    mobileNavToggle.addEventListener('click', function () {
+      var drawer = document.getElementById('mobile-nav-drawer');
+      if (drawer && drawer.classList.contains('active')) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
   }
   // mobile-nav-backdrop already has inline onclick="closeMobileNav()"
   // filter-drawer-toggle already has inline onclick="toggleFilterSidebar()"
