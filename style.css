@@ -2705,10 +2705,12 @@ p {
     gap: 1rem;
     z-index: 899;
     transform: translateY(-120%);
-    transition: transform var(--transition-smooth);
+    transition: transform var(--transition-smooth), visibility var(--transition-smooth);
+    visibility: hidden;
   }
   .mobile-nav-drawer.active {
     transform: translateY(0);
+    visibility: visible;
   }
   .review-grid {
     grid-template-columns: 1fr;
