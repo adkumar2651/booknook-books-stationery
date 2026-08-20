@@ -2704,11 +2704,14 @@ p {
     box-shadow: var(--shadow-modal);
     gap: 1rem;
     z-index: 899;
+    overflow: hidden;
     transform: translateY(-120%);
-    transition: transform var(--transition-smooth);
+    transition: transform var(--transition-smooth), visibility var(--transition-smooth);
+    visibility: hidden;
   }
   .mobile-nav-drawer.active {
     transform: translateY(0);
+    visibility: visible;
   }
   .review-grid {
     grid-template-columns: 1fr;
@@ -2731,31 +2734,6 @@ p {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
-  }
-  /* --- Spotlight section mobile fixes --- */
-  .editorial-spotlight {
-    padding: 1.75rem 1.25rem;
-  }
-  .spotlight-content h2 {
-    font-size: 1.6rem;
-  }
-  .spotlight-content h4 {
-    font-size: 0.75rem;
-  }
-  .spotlight-image-wrap img {
-    max-width: 100%;
-    height: auto;
-    max-height: 300px;
-  }
-  .spotlight-meta-list {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-  .spotlight-content > div[style*="display:flex"] {
-    flex-direction: column;
-  }
-  .spotlight-content > div[style*="display:flex"] > button {
-    width: 100%;
   }
 }
 
